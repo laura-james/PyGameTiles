@@ -1,5 +1,5 @@
-screenwidth = 800
-screenheight = 800
+screenwidth = 400
+screenheight = 400
 tilediv = 11
 tilesizeX = screenwidth / tilediv
 tilesizeY = screenheight / tilediv

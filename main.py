@@ -70,6 +70,23 @@ def drawrandomblocks():
         rnumY = random.randint(0, config.tilediv - 1)
         # TODO to stop the random blocks appearing at the center
         tiles[rnumX][rnumY].type = "stone"
+    # added new thing to read from a text File 
+    f = open("map.txt")
+    mapgrid = f.readlines()
+    f.close()
+    print(len(mapgrid))
+    for i in range(len(mapgrid)):
+      print(mapgrid[i].strip())
+      splitstuff = mapgrid[i].strip().split(",")
+      print(splitstuff)
+      for j in range(len(splitstuff)):
+        print(splitstuff[j])
+        if splitstuff[j]=="b":
+          tiles[i][j].type = "stone"
+        if splitstuff[j]=="c":
+          tiles[i][j].type = "coin"
+
+  
 
 
 def drawrandomcoins():
