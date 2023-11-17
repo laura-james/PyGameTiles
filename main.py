@@ -197,7 +197,7 @@ twidth = config.tilesizeX
 theight = config.tilesizeY
 ghostImg = pygame.image.load("ghost.png")
 ghostdelay = 0
-GHOSTFRICTION = 4  # higher number slows ghosts down
+GHOSTFRICTION = 1  # higher number slows ghosts down
 
 tiles = []
 drawallblanktiles()
